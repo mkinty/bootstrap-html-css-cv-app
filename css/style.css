@@ -1,0 +1,472 @@
+/* GENERAL */
+
+body
+{
+  font-family: "Lato", sans-serif;
+}
+h1, h2, h3, h4, h5, h6
+{
+  font-weight: bold;
+}
+/* picture */
+img
+{
+  max-width: 100%;
+  height: auto;
+}
+/* Pour toutes les sections */
+section
+{
+  padding: 45px 0px 80px 0px;
+}
+/* bock div de class heading */
+section .heading
+{
+  /* centrer les textes */
+text-align: center;
+/* espacer les ecriture avec padding-bottom */
+padding-bottom: 40px
+}
+section .heading h2
+{
+  text-transform: uppercase;
+}
+.red-divider
+{
+	width: 100px;
+  height: 2px;
+  background: #081a1f;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+.white-divider
+{
+	width: 100px;
+  height: 2px;
+  background: #fff;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+ul, ol
+{
+  list-style: none;
+}
+.button1
+{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 18px 50px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+  background: transparent;
+}
+.button1:hover
+{
+  background: white;
+  color: #081a1f;
+  text-decoration: none;
+}
+
+/* MENU */
+
+.navbar
+{
+  background: #081a1f;
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar .navbar-collapse
+{
+  text-align: center;
+}
+.navbar li a
+{
+  color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li a.active
+{
+  color: #081a1f !important;
+  background: #fff !important;
+}
+.navbar-toggler{
+  color: #081a1f;
+  border-color: #081a1f;
+  background-color: #fff;
+}
+.navbar-expand-lg .navbar-toggler
+{
+  /*border-style: none;*/
+  border-color: #fff
+}
+.navbar-toggler-icon
+{
+  /*background-color: #fff !important;*/
+}
+
+
+
+
+/* ABOUT */
+
+/* Section about */
+#about
+{
+  padding-top: 100px;
+  background: #081a1f;
+}
+/* picture */
+.profile-picture
+{
+  text-align: center;
+  margin: 0px auto;
+  float: none;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.profile-picture:hover
+{
+  filter: none;
+  -webkit-filter: none;
+}
+/* Hello c'est moi moustapha */
+#about .heading h1
+{
+  color: #fff;
+  text-transform: uppercase;
+}
+/* Data Scientist | Data Analyst | Web Developer Django + React */
+h6{
+  color:#ccc
+}
+
+
+/* SKILLS */
+
+#skills
+{
+  background: #fff;
+}
+#skills .heading h2
+{
+  color: #081a1f;
+}
+#skills .progress
+{
+  height: auto;
+  margin: 30px 20px;
+  backface-visibility: #ddd;
+}
+#skills .progress-bar
+{
+  background: #081a1f;
+}
+/* h5 dans skills */
+#skills .progress-bar h5
+{
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+
+
+/* EXPERIENCE */
+
+#experience
+{
+  background: #081a1f;
+}
+#experience .heading h2
+{
+  color: #fff;
+}
+/* dessiner la ligne verticale */
+.timeline
+{
+  padding: 30px 10px;
+  position: relative;
+}
+.timeline:before
+{
+  top: 0px;
+  bottom: 0px;
+  position: absolute;
+  content: " ";
+  width: 5px;
+  background-color: #333;
+  left: 50%;
+  margin-left: -2.5px;
+}
+/* Le petit sac */
+/* le signe > veut dire que le li
+qui vient juste après .timeline */
+.timeline > li
+{
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:after
+{
+  clear: both;
+}
+.timeline > li:before, .timeline > li:after
+{
+  content: " ";
+  display: table;
+}
+.timeline li .timeline-badge
+{
+  color: #7f9e9b;
+  width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+/* discription experience */
+.timeline-panel-container
+{
+  width: 50%;
+  float: left;
+}
+.timeline-panel-container-inverted
+{
+  width: 50%;
+  float: right;
+}
+.timeline-panel
+{
+  width: 90%;
+  float: right;
+  margin-right: 40px;
+  border: 1px solid #d4d4d4;
+  border-radius: 7px;
+  padding: 20px 25px;
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.175);
+  background: #fff;
+}
+.timeline-panel-container-inverted .timeline-panel
+{
+  float: left;
+  margin-left: 40px;
+}
+.timeline-panel:after
+{
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0px solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " "; /* pour faire apparaitre le petit triangle */
+}
+.timeline-panel-container-inverted .timeline-panel:after
+{
+  border-left-width: 0px;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-heading h3
+{
+  margin-top: 5px;
+  font-size: 20px;
+}
+.timeline-heading h4
+{
+  color: #7f9e9b;
+}
+
+/* EDUCATION SECTION */
+
+#education
+{
+  background: #fff;
+}
+#education .heading h2
+{
+  color: #081a1f;
+}
+.education-block
+{
+  margin: 0px auto;
+  text-align: center;
+  padding: 30px;
+  background: #ddd;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+.education-block h5
+{
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.education-block .fa
+{
+  font-size: 40px;
+  color: #7f9e9b;
+}
+.education-block h3
+{
+  color: #081a1f;
+}
+.education-block h4
+{
+  margin-bottom: 20px;
+  color: #7f9e9b;
+}
+.education-block p
+{
+  font-weight: bold;
+}
+#education .row
+{
+  padding-bottom: 20px;
+}
+
+
+/* PORTFOLIO */
+
+#portfolio
+{
+  background: #081a1f;
+}
+#portfolio .heading h2
+{
+  color: #fff;
+}
+#portfolio .row
+{
+  padding-bottom: 20px;
+}
+#portfolio .thumbnail img
+{
+  border: 5px solid #fff;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+#portfolio .thumbnail img:hover
+{
+  filter: none;
+  -webkit-filter: none;
+}
+
+
+/* RECOMMANDATIONS */
+
+#recommandations
+{
+  background: #fff;
+}
+#recommandations .heading h2
+{
+  color: #081a1f;
+}
+
+#myCarousel .fa-chevron-right, #myCarousel .fa-chevron-left
+{
+  color: #7f9e9b;
+  font-size: 30px;
+}
+#myCarousel .carousel-item
+{
+  background: #ddd;
+  padding: 40px 30px;
+  text-align: center;
+  min-height: 100px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+#myCarousel .carousel-item h3
+{
+  color: #7f9e9b;
+  font-style: italic;
+}
+#myCarousel .carousel-item h4
+{
+  color: #000;
+}
+.carousel-indicators li.active
+{
+  background-color: #7f9e9b;
+}
+
+/* FOOTER */
+
+footer
+{
+  background: #7f9e9b;
+  padding: 10px 0 10px;
+}
+footer .fa
+{
+  font-size: 25px;
+  margin: 10px;
+  color: #081a1f;
+  height: 30px;
+}
+footer .fa:hover
+{
+  font-size: 30px;
+}
+footer h5
+{
+  color: #fff;
+  font-weight: normal; /* enlever gras au cas ou */
+}
+
+/* FORMULAIRE CONTACT */
+
+#contact
+{
+  background: #081a1f;
+}
+#contact .heading h2
+{
+  color: #fff;
+}
+#contact-form
+{
+  font-size: 20px;
+  color: #fff;
+}
+.form-control
+{
+  height: 50px;
+  font-size: 18px;
+}
+.comments
+{
+  font-style: italic;
+  font-size: 18px;
+  color: #fff;
+  height: 25px;
+}
+#contact-form input[type=submit]
+{
+  margin: 40px auto 0px;
+  display: block;
+}
+
+.thank-you
+{
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 22px;
+}
